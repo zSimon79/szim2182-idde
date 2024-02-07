@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: java-app
-          path: '${{ github.workspace }}/spring/build/libs/*.jar'
+          path: '${{ github.workspace }}/spring/build/libs/szim2182-idde.jar'
 
   deploy:
     runs-on: windows-latest
@@ -65,5 +65,5 @@ jobs:
         with:
           app-name: 'hikes'
           slot-name: 'Production'
-          package: '*.jar'
+          package: 'szim2182-idde.jar'
           
