@@ -24,6 +24,9 @@ jobs:
       - name: Downlod Artifacts 
         uses: actions/download-artifact@v3
 
+      - name: Build with Gradle
+        run: ./gradlew build
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
