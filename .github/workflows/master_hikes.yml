@@ -21,9 +21,12 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '17'
-          
+
+      - name: Give execute permissions to gradlew
+        run: chmod +x gradlew   
+        
       - name: Build with Gradle
-        run: ./gradlew clean build
+        run: ./gradlew  build
       
       - name: Downlod Artifacts 
         uses: actions/download-artifact@v3
