@@ -36,10 +36,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: java-app
-          path: '${{ github.workspace }}/szim2182-idde/spring/build/libs/szim2182-idde.jar'
+          path: '${{ github.workspace }}/build/libs/szim2182-idde.jar'
 
-      - name: Display path
-        run: echo ${{ github.workspace }}
 
   deploy:
     runs-on: windows-latest
