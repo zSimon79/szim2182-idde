@@ -38,6 +38,9 @@ jobs:
           name: java-app
           path: '${{ github.workspace }}/szim2182-idde/spring/build/libs/szim2182-idde.jar'
 
+      - name: Display path
+        run: echo ${{ github.workspace }}
+
   deploy:
     runs-on: windows-latest
     needs: build
