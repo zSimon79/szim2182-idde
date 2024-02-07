@@ -23,7 +23,7 @@ jobs:
           java-version: '17'
           
       - name: Build with Gradle
-        run: gradlew.bat clean build
+        run: gradlew.bat  build
       
       - name: Downlod Artifacts 
         uses: actions/download-artifact@v3
