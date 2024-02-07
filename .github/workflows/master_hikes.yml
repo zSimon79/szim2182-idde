@@ -14,14 +14,15 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       - name: Set up Java version
         uses: actions/setup-java@v1
         with:
           java-version: '17'
 
-     
+      - name: Downlod Artifacts 
+        uses: actions/download-artifact@v3
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
