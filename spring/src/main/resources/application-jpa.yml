@@ -1,8 +1,8 @@
 spring:
   datasource:
+    url: jdbc:sqlserver://hikes.database.windows.net:1433;database=HikeServlet;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
     username: Servlet
     password: 1234%Abcd
-    url: jdbc:sqlserver://hikes.database.windows.net:1433;database=HikeServlet;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
     show-sql: true
